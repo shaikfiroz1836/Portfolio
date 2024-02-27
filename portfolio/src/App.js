@@ -1,6 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Navbar from './Components/Navbar'
+import Header from './Components/Header'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Education from './Pages/Education'
@@ -12,6 +13,7 @@ class App extends React.Component {
       <div>
         <Router>            
             <Navbar/>
+            <Header/>
             <Switch>
             <Route path="/Home" component={Home}/>
             <Route path="/About" component={About}/>
@@ -19,6 +21,7 @@ class App extends React.Component {
             <Route path="/Project" component={Project}/>
             <Route path="/Contact" component={Contact}/>
             </Switch> 
+            
         </Router>
       </div>
     )
