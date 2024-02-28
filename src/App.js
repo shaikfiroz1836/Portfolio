@@ -1,7 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Navbar from './Components/Navbar'
-import Header from './Components/Header'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Education from './Pages/Education'
@@ -13,7 +12,6 @@ class App extends React.Component {
       <div>
         <Router>            
             <Navbar/>
-            <Header/>
             <br />
             <Switch>
             <Route path="/Home" component={Home}/>
