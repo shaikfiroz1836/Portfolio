@@ -14,6 +14,7 @@ class App extends React.Component {
         <Router>            
             <Navbar/>
             <Header/>
+            <br />
             <Switch>
             <Route path="/Home" component={Home}/>
             <Route path="/About" component={About}/>
