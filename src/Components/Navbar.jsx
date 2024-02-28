@@ -2,6 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import "../App.css";
 import { Link } from 'react-router-dom';
 import JavaLogo from '../Images/java-logo.png'
+import HtmlLogo from '../Images/html-logo.png'
+import BootstrapLogo from '../Images/bootstrap-logo.png'
+import JsLogo from '../Images/javascript-logo.png'
+import RtLogo from '../Images/react-logo.png'
 
 const Navbar = () => {
   const homeRef = useRef(null);
@@ -87,7 +91,7 @@ const Navbar = () => {
         </div>
         <div className="col mb-4">
           <div className="card h-100">
-            <img src="your_image_path_or_url" className="card-img-top" alt="Technical Skill 2" />
+            <img src={HtmlLogo} className="card-img-top" alt="Technical Skill 2" />
             <div className="card-body">
               <h5 className="card-title">HTML</h5>
               <p className="card-text">Description about HTML.</p>
@@ -96,7 +100,7 @@ const Navbar = () => {
         </div>
         <div className="col mb-4">
           <div className="card h-100">
-            <img src="../Images/bootstrap-logo.png" className="card-img-top" alt="Technical Skill 3" />
+            <img src={BootstrapLogo} className="card-img-top" alt="Technical Skill 3" />
             <div className="card-body">
               <h5 className="card-title">CSS with Bootstrap</h5>
               <p className="card-text">Description about CSS with Bootstrap.</p>
@@ -105,7 +109,7 @@ const Navbar = () => {
         </div>
         <div className="col mb-4">
           <div className="card h-100">
-            <img src="your_image_path_or_url" className="card-img-top" alt="Technical Skill 3" />
+            <img src={JsLogo} className="card-img-top" alt="Technical Skill 3" />
             <div className="card-body">
               <h5 className="card-title">Javascript</h5>
               <p className="card-text">Description about Javascript.</p>
@@ -114,7 +118,7 @@ const Navbar = () => {
         </div>
         <div className="col mb-4">
           <div className="card h-100">
-            <img src="your_image_path_or_url" className="card-img-top" alt="Technical Skill 3" />
+            <img src={RtLogo} className="card-img-top" alt="Technical Skill 3" />
             <div className="card-body">
               <h5 className="card-title">React.js</h5>
               <p className="card-text">Description about React.js.</p>
