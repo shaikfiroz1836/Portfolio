@@ -9,7 +9,7 @@ const Home = () => {
       <div className="row row-cols-1 row-cols-md-3">
         <div className="col mb-4">
           <div className="card h-100">
-            <img src="./Images/java-loho.png" className="card-img-top" alt="Technical Skill 1" />
+            <img src="./Images/java-logo.png" className="card-img-top" alt="Technical Skill 1" />
             <div className="card-body">
               <h5 className="card-title">Core Java</h5>
               <p className="card-text">Description about Core Java.</p>
