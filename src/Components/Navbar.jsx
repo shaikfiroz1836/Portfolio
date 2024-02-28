@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import "../App.css";
 import { Link } from 'react-router-dom';
+import JavaLogo from '../Images/java-logo.png'
 
 const Navbar = () => {
   const homeRef = useRef(null);
@@ -77,7 +78,7 @@ const Navbar = () => {
       <div className="row row-cols-1 row-cols-md-3">
         <div className="col mb-4">
           <div className="card h-100">
-            <img src="./Images/java-logo.png" className="card-img-top" alt="Technical Skill 1" />
+            <img src={JavaLogo} className="card-img-top" alt="Technical Skill 1" />
             <div className="card-body">
               <h5 className="card-title">Core Java</h5>
               <p className="card-text">Description about Core Java.</p>
@@ -95,7 +96,7 @@ const Navbar = () => {
         </div>
         <div className="col mb-4">
           <div className="card h-100">
-            <img src="your_image_path_or_url" className="card-img-top" alt="Technical Skill 3" />
+            <img src="../Images/bootstrap-logo.png" className="card-img-top" alt="Technical Skill 3" />
             <div className="card-body">
               <h5 className="card-title">CSS with Bootstrap</h5>
               <p className="card-text">Description about CSS with Bootstrap.</p>
