@@ -102,6 +102,24 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        <div className="col mb-4">
+          <div className="card h-100">
+            <img src="your_image_path_or_url" className="card-img-top" alt="Technical Skill 3" />
+            <div className="card-body">
+              <h5 className="card-title">Javascript</h5>
+              <p className="card-text">Description about Javascript.</p>
+            </div>
+          </div>
+        </div>
+        <div className="col mb-4">
+          <div className="card h-100">
+            <img src="your_image_path_or_url" className="card-img-top" alt="Technical Skill 3" />
+            <div className="card-body">
+              <h5 className="card-title">React.js</h5>
+              <p className="card-text">Description about React.js.</p>
+            </div>
+          </div>
+        </div>
         {/* Add more cards for additional technical skills */}
       </div>   
       
