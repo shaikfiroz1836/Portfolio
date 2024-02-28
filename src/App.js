@@ -2,10 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
-import About from './Pages/About'
-import Education from './Pages/Education'
-import Project from './Pages/Project'
-import Contact from './Pages/Contact'
+
 class App extends React.Component {
   render() {
     return (
@@ -14,11 +11,8 @@ class App extends React.Component {
             <Navbar/>
             <br />
             <Switch>
-            <Route path="/Home" component={Home}/>
-            <Route path="/About" component={About}/>
-            <Route path="/Education" component={Education}/>
-            <Route path="/Project" component={Project}/>
-            <Route path="/Contact" component={Contact}/>
+            <Route path="/#Home" component={Home}/>
+            
             </Switch> 
             
         </Router>

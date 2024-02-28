@@ -1,3 +1,132 @@
-.navbar-nav > li >Link.active, .navbar-nav > li > Link:focus {
-  bprder-top: 0.1875rem solid var(--primary-red);
+.Head-File {
+  position: relative;
+  z-index: 999999999;
+  width: 100%;
+  margin: auto;
+  background-color: var(--BED6ED);
+  padding:14px;
+  transition: all 0.3s ease-in-out; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+a.BHAR-Name {
+  color: var(--013B72);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: 'Dancing Script', cursive;
+}
+div.Grid-1{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+.Img-Src {
+  width: 50px;
+  height: auto; 
+  margin-right: 5px;
+  filter: var(--invert-black);
+}
+
+.Move {
+  font-weight: bold;
+}
+
+.nav_ico,.nav_I {
+  display: none; 
+}
+
+.main_nav {
+  display: flex;
+  align-items: center;
+}
+
+.Header-Files {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a.NAV-Items{
+  text-decoration: none;
+  font-size: 23px;
+  color:var(--013B72);
+  padding: 10px 15px;
+  font-weight: 700;
+  transition: all 0.3s ease-out;
+}
+
+a.NAV-Items:hover{
+background-color:var(--D8E4EB);
+border-radius: 5px;
+box-shadow: 1px 2px 3px var(--ff);
+color: var(--0358a8);
+transition: all 0.3s ease-in-out; 
+}
+a.NAV-Items:focus{
+  background-color:var(--D8E4EB);
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px var(--ff);
+  transition-duration: 0.5s;
+  color: var(--0358a8);
+  transition: all 0.3s ease-in-out; 
+  }
+
+  @media screen and (max-width: 900px) {
+  .nav_ico {
+    display: block; 
+    cursor: pointer;
+  }
+
+  .Header-Files {
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background-color: var(--BED6ED);
+    z-index: 999999999;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: slideDown 0.3s ease; 
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    padding-top: 20px;
+  }
+ .fa-bars,
+ .fa-times{
+  color: var(--013B72);
+ }
+  
+  #menuTrigger:checked ~ .Header-Files {
+    display: flex;
+  }
+
+  .Header-Files li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Header-Files a {
+    width: 100%;
+  }
+
+  @keyframes slideDown {
+    from {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  }
 }
