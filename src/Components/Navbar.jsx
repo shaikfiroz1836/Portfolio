@@ -6,6 +6,7 @@ import HtmlLogo from '../Images/html-logo.png'
 import BootstrapLogo from '../Images/bootstrap-logo.png'
 import JsLogo from '../Images/javascript-logo.png'
 import RtLogo from '../Images/react-logo.png'
+import FLogo from '../Images/Firoz.logo2-removebg-preview.png'
 
 const Navbar = () => {
   const homeRef = useRef(null);
@@ -57,9 +58,9 @@ const Navbar = () => {
     <div>
       <header className="Head-File">
         <div className="Grid-1">
-          <Link to="/" className="BHAR-Name">
-            <h1 className="NAME-BH">Logo</h1>
-          </Link>
+        <Link to="/" className="BHAR-Name center animate-bounce">
+          <h1 className="NAME-BH"><img height={100} width={100} alt='Firoz-logo2.png' src={FLogo}/></h1>
+        </Link>
         </div>
         <div className="Grid-2">
           <input id="menuTrigger" type="checkbox" className="nav_I" />
@@ -68,21 +69,21 @@ const Navbar = () => {
             <Link to="#Home" className="NAV-Items a" onClick={() => scrollToSection(homeRef)}>Home</Link>
             <Link to="#About" className="NAV-Items b" onClick={() => scrollToSection(aboutRef)}>About</Link>
             <Link to="#Education" className="NAV-Items c" onClick={() => scrollToSection(educationRef)}>Education</Link>
-            <Link to="#Project" className="NAV-Items c" onClick={() => scrollToSection(projectRef)}>Projects</Link>
-            <Link to="#Contact" className="NAV-Items d" onClick={() => scrollToSection(contactRef)}>Contact</Link>
+            <Link to="#Project" className="NAV-Items d" onClick={() => scrollToSection(projectRef)}>Projects</Link>
+            <Link to="#Contact" className="NAV-Items e" onClick={() => scrollToSection(contactRef)}>Contact</Link>
           </nav>
         </div>
       </header>
 
       <div id="Home" ref={homeRef}>
       <div id="Home">
-      <h1 className="animate__animated animate__slideInLeft">Hi,This is Shaik.Mahammad Khaja Firoz i am a Web Developer</h1>
+      <h1 className="animate__animated animate__slideInLeft center">Hi,This is Shaik.Mahammad Khaja Firoz i am a Web Developer</h1>
       <br /><br />
       <h2 className="animate__animated animate__slideInLeft">Technical Skills</h2>
       <div className="row row-cols-1 row-cols-md-3">
         <div className="col mb-4">
-          <div className="card h-100">
-            <img src={JavaLogo} className="card-img-top" alt="Technical Skill 1" />
+          <div className="card h-200">
+            <img src={JavaLogo} height={200} width={50} className="card-img-top" alt="Technical Skill 1" />
             <div className="card-body">
               <h5 className="card-title">Core Java</h5>
               <p className="card-text">Description about Core Java.</p>
@@ -90,8 +91,8 @@ const Navbar = () => {
           </div>
         </div>
         <div className="col mb-4">
-          <div className="card h-100">
-            <img src={HtmlLogo} className="card-img-top" alt="Technical Skill 2" />
+          <div className="card h-200">
+            <img src={HtmlLogo} height={200} width={50} className="card-img-top" alt="Technical Skill 2" />
             <div className="card-body">
               <h5 className="card-title">HTML</h5>
               <p className="card-text">Description about HTML.</p>
@@ -99,8 +100,8 @@ const Navbar = () => {
           </div>
         </div>
         <div className="col mb-4">
-          <div className="card h-100">
-            <img src={BootstrapLogo} className="card-img-top" alt="Technical Skill 3" />
+          <div className="card h-200">
+            <img src={BootstrapLogo} height={200} width={50} className="card-img-top" alt="Technical Skill 3" />
             <div className="card-body">
               <h5 className="card-title">CSS with Bootstrap</h5>
               <p className="card-text">Description about CSS with Bootstrap.</p>
@@ -108,8 +109,8 @@ const Navbar = () => {
           </div>
         </div>
         <div className="col mb-4">
-          <div className="card h-100">
-            <img src={JsLogo} className="card-img-top" alt="Technical Skill 3" />
+          <div className="card h-200">
+            <img src={JsLogo} height={200} width={50} className="card-img-top" alt="Technical Skill 3" />
             <div className="card-body">
               <h5 className="card-title">Javascript</h5>
               <p className="card-text">Description about Javascript.</p>
@@ -117,8 +118,8 @@ const Navbar = () => {
           </div>
         </div>
         <div className="col mb-4">
-          <div className="card h-100">
-            <img src={RtLogo} className="card-img-top" alt="Technical Skill 3" />
+          <div className="card h-200">
+            <img src={RtLogo} height={200} width={50} className="card-img-top" alt="Technical Skill 3" />
             <div className="card-body">
               <h5 className="card-title">React.js</h5>
               <p className="card-text">Description about React.js.</p>
