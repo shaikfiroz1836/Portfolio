@@ -58,7 +58,7 @@ const Navbar = () => {
     <div>
       <header className="Head-File">
         <div className="Grid-1">
-        <Link to="/" className="BHAR-Name center animate-bounce">
+        <Link to="/" className="BHAR-Name center ">
           <h1 className="NAME-BH"><img height={100} width={100} alt='Firoz-logo2.png' src={FLogo}/></h1>
         </Link>
         </div>
@@ -75,10 +75,21 @@ const Navbar = () => {
         </div>
       </header>
 
-      <div id="Home" ref={homeRef}>
+      <div id="Home" ref={homeRef} className="center-slide-in">
       <div id="Home">
-      <h1 className="animate__animated animate__slideInLeft center">Hi,This is Shaik.Mahammad Khaja Firoz i am a Web Developer</h1>
-      <br /><br />
+      <div class="Details-Grid-First-Text">
+  <div class="Name-Grid-BH animate-bounce">
+    <h1 class="Name-BH">I'M Shaik.Mahammad Khaja Firoz</h1>
+  </div>
+  <div class="Design-Grid">
+    <h2 class="Design">A Web Developer</h2>
+  </div>
+  <div class="Address-Grid">
+    <h3 class="Address-Name">From Andhra Pradesh, India</h3>
+  </div>
+</div>
+
+        <br /><br />
       <h2 className="animate__animated animate__slideInLeft">Technical Skills</h2>
       <div className="row row-cols-1 row-cols-md-3">
         <div className="col mb-4">
