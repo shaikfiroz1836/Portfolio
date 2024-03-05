@@ -77,15 +77,15 @@ const Navbar = () => {
 
       <div id="Home" ref={homeRef} className="center-slide-in">
       <div id="Home">
-      <div class="Details-Grid-First-Text">
-  <div class="Name-Grid-BH animate-bounce">
-    <h1 class="Name-BH">I'M Shaik.Mahammad Khaja Firoz</h1>
+      <div className="Details-Grid-First-Text">
+  <div className="Name-Grid-BH animate-bounce">
+    <h1 className="Name-BH">I'M Shaik.Mahammad Khaja Firoz</h1>
   </div>
-  <div class="Design-Grid">
-    <h2 class="Design">A Web Developer</h2>
+  <div className="Design-Grid">
+    <h2 className="Design">A Web Developer</h2>
   </div>
-  <div class="Address-Grid">
-    <h3 class="Address-Name">From Andhra Pradesh, India</h3>
+  <div className="Address-Grid">
+    <h3 className="Address-Name">From Andhra Pradesh, India</h3>
   </div>
 </div>
 
