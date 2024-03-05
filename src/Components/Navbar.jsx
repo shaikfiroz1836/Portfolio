@@ -55,7 +55,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div>
+    <div className='container-fluid'>
       <header className="Head-File">
         <div className="Grid-1">
         <Link to="/" className="BHAR-Name center ">
@@ -90,11 +90,11 @@ const Navbar = () => {
 </div>
 
         <br /><br />
-      <h2 className="animate__animated animate__slideInLeft">Technical Skills</h2>
-      <div className="row row-cols-1 row-cols-md-3">
-        <div className="col mb-4">
+      <h2 className="Tech-slide">Technical Skills</h2>
+      <div className="row Tech-slide">
+        <div className="col-lg-2 col-md-3 col-sm-12">
           <div className="card h-200">
-            <img src={JavaLogo} height={200} width={50} className="card-img-top" alt="Technical Skill 1" />
+            <img src={JavaLogo}  className="card-img-top" alt="Technical Skill 1" />
             <div className="card-body">
               <h5 className="card-title">Core Java</h5>
               <p className="card-text">Description about Core Java.</p>
@@ -103,7 +103,7 @@ const Navbar = () => {
         </div>
         <div className="col mb-4">
           <div className="card h-200">
-            <img src={HtmlLogo} height={200} width={50} className="card-img-top" alt="Technical Skill 2" />
+            <img src={HtmlLogo} className="card-img-top" alt="Technical Skill 2" />
             <div className="card-body">
               <h5 className="card-title">HTML</h5>
               <p className="card-text">Description about HTML.</p>
@@ -112,7 +112,7 @@ const Navbar = () => {
         </div>
         <div className="col mb-4">
           <div className="card h-200">
-            <img src={BootstrapLogo} height={200} width={50} className="card-img-top" alt="Technical Skill 3" />
+            <img src={BootstrapLogo}  className="card-img-top" alt="Technical Skill 3" />
             <div className="card-body">
               <h5 className="card-title">CSS with Bootstrap</h5>
               <p className="card-text">Description about CSS with Bootstrap.</p>
@@ -121,7 +121,7 @@ const Navbar = () => {
         </div>
         <div className="col mb-4">
           <div className="card h-200">
-            <img src={JsLogo} height={200} width={50} className="card-img-top" alt="Technical Skill 3" />
+            <img src={JsLogo} className="card-img-top" alt="Technical Skill 3" />
             <div className="card-body">
               <h5 className="card-title">Javascript</h5>
               <p className="card-text">Description about Javascript.</p>
@@ -130,7 +130,7 @@ const Navbar = () => {
         </div>
         <div className="col mb-4">
           <div className="card h-200">
-            <img src={RtLogo} height={200} width={50} className="card-img-top" alt="Technical Skill 3" />
+            <img src={RtLogo}  className="card-img-top" alt="Technical Skill 3" />
             <div className="card-body">
               <h5 className="card-title">React.js</h5>
               <p className="card-text">Description about React.js.</p>
@@ -149,10 +149,37 @@ const Navbar = () => {
       </div>
 
       <div id="Education" ref={educationRef}>
-      <h2>Education</h2>
-    <p>
-      B.Tech from SRM Institute of Science & Technology
-    </p>
+        <h2>Education</h2>
+        <table className="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">S.No</th>
+              <th scope="col">College Name</th>
+              <th scope="col">Course Name</th>
+              <th scope="col">Passed out Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>SRMIST</td>
+              <td>Computer Science & Engg</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Sri Chaitanya Jr.College</td>
+              <td>MPC</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Bhashyam</td>
+              <td>SSC</td>
+              <td>2017</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <div id="Project" ref={projectRef}>
@@ -191,5 +218,6 @@ const Navbar = () => {
     </div>
   );
 };
+
 
 export default Navbar;
