@@ -79,7 +79,7 @@ const Navbar = () => {
       <div id="Home">
       <div className="Details-Grid-First-Text">
   <div className="Name-Grid-BH animate-bounce">
-    <h1 className="Name-BH">I'M Shaik.Mahammad Khaja Firoz</h1>
+    <h1 className="Name-BH">I'M Shaik Mahammad Khaja Firoz</h1>
   </div>
   <div className="Design-Grid">
     <h2 className="Design">A Web Developer</h2>
