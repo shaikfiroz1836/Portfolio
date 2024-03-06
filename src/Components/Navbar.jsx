@@ -92,51 +92,91 @@ const Navbar = () => {
         <br /><br />
       <h2 className="Tech-slide">Technical Skills</h2>
       <div className="row Tech-slide">
-        <div className="col-lg-2 col-md-3 col-sm-12">
-          <div className="card h-200">
-            <img src={JavaLogo}  className="card-img-top" alt="Technical Skill 1" />
-            <div className="card-body">
-              <h5 className="card-title">Core Java</h5>
-              <p className="card-text">Description about Core Java.</p>
-            </div>
-          </div>
-        </div>
-        <div className="col mb-4">
-          <div className="card h-200">
-            <img src={HtmlLogo} className="card-img-top" alt="Technical Skill 2" />
-            <div className="card-body">
-              <h5 className="card-title">HTML</h5>
-              <p className="card-text">Description about HTML.</p>
-            </div>
-          </div>
-        </div>
-        <div className="col mb-4">
-          <div className="card h-200">
-            <img src={BootstrapLogo}  className="card-img-top" alt="Technical Skill 3" />
-            <div className="card-body">
-              <h5 className="card-title">CSS with Bootstrap</h5>
-              <p className="card-text">Description about CSS with Bootstrap.</p>
-            </div>
-          </div>
-        </div>
-        <div className="col mb-4">
-          <div className="card h-200">
-            <img src={JsLogo} className="card-img-top" alt="Technical Skill 3" />
-            <div className="card-body">
-              <h5 className="card-title">Javascript</h5>
-              <p className="card-text">Description about Javascript.</p>
-            </div>
-          </div>
-        </div>
-        <div className="col mb-4">
-          <div className="card h-200">
-            <img src={RtLogo}  className="card-img-top" alt="Technical Skill 3" />
-            <div className="card-body">
-              <h5 className="card-title">React.js</h5>
-              <p className="card-text">Description about React.js.</p>
-            </div>
-          </div>
-        </div>
+      <div className="col mb-4 card-container">
+  <div className="card h-200">
+    <div className="card-front">
+      <img src={JavaLogo} className="card-img-top" alt="Technical Skill 1" />
+      <div className="card-body">
+        <h5 className="card-title">Core Java</h5>
+        <p className="card-text">Hover to see description</p>
+      </div>
+    </div>
+    <div className="card-back">
+      <div className="card-body">
+        <h5 className="card-title">Core Java</h5>
+        <p className="card-text">Description about Core Java.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="col mb-4 card-container">
+  <div className="card h-200">
+    <div className="card-front">
+      <img src={HtmlLogo} className="card-img-top" alt="Technical Skill 1" />
+      <div className="card-body">
+        <h5 className="card-title">Html</h5>
+        <p className="card-text">Hover to see description</p>
+      </div>
+    </div>
+    <div className="card-back">
+      <div className="card-body">
+        <h5 className="card-title">Html</h5>
+        <p className="card-text">Description about Html.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="col mb-4 card-container">
+  <div className="card h-200">
+    <div className="card-front">
+      <img src={BootstrapLogo} className="card-img-top" alt="Technical Skill 1" />
+      <div className="card-body">
+        <h5 className="card-title">Bootstrap</h5>
+        <p className="card-text">Hover to see description</p>
+      </div>
+    </div>
+    <div className="card-back">
+      <div className="card-body">
+        <h5 className="card-title">ootstrap</h5>
+        <p className="card-text">Description about ootstrap.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="col mb-4 card-container">
+  <div className="card h-200">
+    <div className="card-front">
+      <img src={JsLogo} className="card-img-top" alt="Technical Skill 1" />
+      <div className="card-body">
+        <h5 className="card-title">Javascript</h5>
+        <p className="card-text">Hover to see description</p>
+      </div>
+    </div>
+    <div className="card-back">
+      <div className="card-body">
+        <h5 className="card-title">Javascript</h5>
+        <p className="card-text">Description about Javascript.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="col mb-4 card-container">
+  <div className="card h-200">
+    <div className="card-front">
+      <img src={RtLogo} className="card-img-top" alt="Technical Skill 1" />
+      <div className="card-body">
+        <h5 className="card-title">React.js</h5>
+        <p className="card-text">Hover to see description</p>
+      </div>
+    </div>
+    <div className="card-back">
+      <div className="card-body">
+        <h5 className="card-title">React.js</h5>
+        <p className="card-text">Description about React.js.</p>
+      </div>
+    </div>
+  </div>
+</div>
         {/* Add more cards for additional technical skills */}
       </div>   
       
@@ -184,6 +224,7 @@ const Navbar = () => {
 
       <div id="Project" ref={projectRef}>
           <h2>Projects</h2>
+
      <ul>
       <li>"Zibber" - Description of the project goes here.</li>
       <li>"Generic Engine Market Module" - Description of the project goes here.</li>
