@@ -106,7 +106,7 @@ const Navbar = () => {
       <h2 className="Tech-slide">Technical Skills</h2>
       <div className="row Tech-slide">
       <div className="col mb-4 card-container">
-  <div className="card h-200">
+  <div className="card h-50">
     <div className="card-front">
       <img src={JavaLogo} className="card-img-top" alt="Technical Skill 1" />
       <div className="card-body">
@@ -123,7 +123,7 @@ const Navbar = () => {
   </div>
 </div>
 <div className="col mb-4 card-container">
-  <div className="card h-200">
+  <div className="card h-50">
     <div className="card-front">
       <img src={HtmlLogo} className="card-img-top" alt="Technical Skill 1" />
       <div className="card-body">
@@ -140,7 +140,7 @@ const Navbar = () => {
   </div>
 </div>
 <div className="col mb-4 card-container">
-  <div className="card h-200">
+  <div className="card h-50">
     <div className="card-front">
       <img src={BootstrapLogo} className="card-img-top" alt="Technical Skill 1" />
       <div className="card-body">
@@ -157,7 +157,7 @@ const Navbar = () => {
   </div>
 </div>
 <div className="col mb-4 card-container">
-  <div className="card h-200">
+  <div className="card h-50">
     <div className="card-front">
       <img src={JsLogo} className="card-img-top" alt="Technical Skill 1" />
       <div className="card-body">
@@ -174,7 +174,7 @@ const Navbar = () => {
   </div>
 </div>
 <div className="col mb-4 card-container">
-  <div className="card h-200">
+  <div className="card h-50">
     <div className="card-front">
       <img src={RtLogo} className="card-img-top" alt="Technical Skill 1" />
       <div className="card-body">
