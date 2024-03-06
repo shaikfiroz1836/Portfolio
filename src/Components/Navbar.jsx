@@ -56,25 +56,38 @@ const Navbar = () => {
 
   return (
     <div className='container-fluid'>
-      <header className="Head-File">
-        <div className="Grid-1">
-        <Link to="/" className="BHAR-Name center ">
-          <h1 className="NAME-BH"><img height={100} width={100} alt='Firoz-logo2.png' src={FLogo}/></h1>
-        </Link>
-        </div>
-        <div className="Grid-2">
-          <input id="menuTrigger" type="checkbox" className="nav_I" />
-          <label htmlFor="menuTrigger" className="nav_ico"><i className="fa fa-bars"></i></label>
-          <nav className="Header-Files">
-            <Link to="#Home" className="NAV-Items a" onClick={() => scrollToSection(homeRef)}>Home</Link>
-            <Link to="#About" className="NAV-Items b" onClick={() => scrollToSection(aboutRef)}>About</Link>
-            <Link to="#Education" className="NAV-Items c" onClick={() => scrollToSection(educationRef)}>Education</Link>
-            <Link to="#Project" className="NAV-Items d" onClick={() => scrollToSection(projectRef)}>Projects</Link>
-            <Link to="#Contact" className="NAV-Items e" onClick={() => scrollToSection(contactRef)}>Contact</Link>
-          </nav>
-        </div>
-      </header>
-
+       <header className="Head-File">
+  <div className="Grid-1">
+    <Link to="/" className="BHAR-Name center ">
+      <h1 className="NAME-BH">
+        <img height={100} width={100} alt='Firoz-logo2.png' src={FLogo} />
+      </h1>
+    </Link>
+  </div>
+  <div className="Grid-2">
+    <input id="menuTrigger" type="checkbox" className="nav_I" />
+    <label htmlFor="menuTrigger" className="nav_ico">
+      <i className="fa fa-bars"></i>
+    </label>
+    <nav className="Header-Files">
+      <Link to="#Home" className="NAV-Items a" onClick={() => scrollToSection(homeRef)}>
+        Home
+      </Link>
+      <Link to="#About" className="NAV-Items b" onClick={() => scrollToSection(aboutRef)}>
+        About
+      </Link>
+      <Link to="#Education" className="NAV-Items c" onClick={() => scrollToSection(educationRef)}>
+        Education
+      </Link>
+      <Link to="#Project" className="NAV-Items d" onClick={() => scrollToSection(projectRef)}>
+        Projects
+      </Link>
+      <Link to="#Contact" className="NAV-Items e" onClick={() => scrollToSection(contactRef)}>
+        Contact
+      </Link>
+    </nav>
+  </div>
+</header>
       <div id="Home" ref={homeRef} className="center-slide-in">
       <div id="Home">
       <div className="Details-Grid-First-Text">
